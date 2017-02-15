@@ -10,6 +10,7 @@ Request.implement({
 });
 
 const Demos = {
+    demosData: './data/demos.json',
     start: function() {
         if (location.protocol == 'file:') Demos.local();
         Demos.getList();
@@ -90,7 +91,7 @@ const Demos = {
     },
 
     getList: function() {
-        new Request.JSON({ url: '/data/demos.json' })
+        new Request.JSON({ url: this.demosData })
             .get().then(function(data) {
                 Demos.categories(data.json);
             });
