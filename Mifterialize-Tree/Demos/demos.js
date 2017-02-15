@@ -10,7 +10,7 @@ Request.implement({
 });
 
 const Demos = {
-    this.demosPath: './Demos/',
+    demosPath: './Demos/',
     demosData: './data/demos.json',
     start: function() {
         if (location.protocol == 'file:') Demos.local();
