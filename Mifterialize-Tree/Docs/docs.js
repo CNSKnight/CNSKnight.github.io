@@ -8,7 +8,7 @@
 const Docs = {
     showdown: new window.showdown.Converter(),
     anchorsPath: '/Docs/index.html',
-    scriptsJson: '/Docs/scripts.json',
+    scriptsJson: '/data/docs.json',
 
     start: function() {
         if (location.protocol == 'file:') Docs.local();

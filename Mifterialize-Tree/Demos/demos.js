@@ -90,7 +90,7 @@ const Demos = {
     },
 
     getList: function() {
-        new Request.JSON({ url: '/Demos/demos.json' })
+        new Request.JSON({ url: '/data/demos.json' })
             .get().then(function(data) {
                 Demos.categories(data.json);
             });
